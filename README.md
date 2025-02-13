@@ -55,11 +55,16 @@ The project is structured into several Jupyter notebooks, each focusing on a spe
    - Automates the process of selecting and evaluating various machine learning algorithms.
    - Tests several models (including Distributed Random Forest, Gradient Boosted Trees, etc.).
    - Compares results using the chosen metric (e.g., RMSE) and helps choose the best model.
+   - Saves the best models of all attractions.
 
-8. **README.md**  
+8. **dashboardcode.ipynb**  
+   - Spits out a .csv based off user settings (number of days to predict, starting date of prediction, weather, etc.) for use with an external visualization tool.
+   -Uses saved models for inference and saved attendence predictions as input.
+
+9. **README.md**  
    - This file: documents the project structure, context, explanation of the notebooks, and the methodology used.
 
-9. **requirements.txt**  
+10. **requirements.txt**  
    - Lists Python dependencies and their versions (libraries used in the notebooks).
    - Allows you to recreate the environment needed to run the project (via `pip install -r requirements.txt`).
 
